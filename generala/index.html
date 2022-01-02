@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Juego de Generala</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scriptGenerala.js"></script>
+    </head>
+    <body>
+        <button onclick=tirada()>Tirar dados</button>
+        <button onclick=sigTurno()>Siguiente turno</button><br>
+        <div class="dado" id="resDado1"></div> <div class="dado" id="resDado2"></div> <div class="dado" id="resDado3"></div> <div class="dado" id="resDado4"></div> <div class="dado" id="resDado5"></div>
+        <form>
+            <input type="checkbox" name="guardar"> Guardar dado 1
+            <input type="checkbox" name="guardar"> Guardar dado 2
+            <input type="checkbox" name="guardar"> Guardar dado 3
+            <input type="checkbox" name="guardar"> Guardar dado 4
+            <input type="checkbox" name="guardar"> Guardar dado 5
+        </form>
+        <table> <tr><th>Categoría</th><th class="turnoDeJugador" name="jugador">1j</th><th class="esperandoTurno" name="jugador">2j</th><th class="esperandoTurno" name="jugador">3j</th><th class="esperandoTurno" name="jugador">4j</th><th class="esperandoTurno" name="jugador">5j</th></tr>
+                <tr><td>1</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>2</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>3</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>4</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>5</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>6</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>Escalera</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>Full</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>Póker</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>Generala</td><td><input type="number" name="1j"></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+                <tr><td>Generala Servida</td><td><input type="number" name="1j" ></td><td><input type="number" name="2j"></td><td><input type="number" name="3j"></td><td><input type="number" name="4j"></td><td><input type="number" name="5j"></td></tr>
+        </table>
+        <button onclick=puntaje()>Calcular puntaje</button>
+    </body>
+</html>

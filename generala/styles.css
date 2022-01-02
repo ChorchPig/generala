@@ -1,0 +1,10 @@
+.turnoDeJugador{
+    background-color: gold;
+}
+.esperandoTurno{
+    background-color: gray;
+}
+div.dado{
+    margin: 5px;
+    display: inline;
+}
